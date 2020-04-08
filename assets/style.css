@@ -1,0 +1,80 @@
+*
+
+header
+{
+    background-image: url(europe.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+
+}
+
+.nav
+{
+    float: center;
+    list-style: none;
+    
+}
+
+.nav li
+{
+    display: inline-block;
+}
+
+.nav li.active a
+{
+    border: 3px solid red;
+
+}
+
+.first-column
+{
+    float: left;
+    width: 66%;
+
+}
+
+.second-column
+{
+    float: right;
+    width: 33%;
+
+}
+
+.aside::after
+{
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.body
+{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    background: #777;
+    width: 960px;
+    font-size: 18px;
+
+}
+
+main {
+    background-color: blue;
+    width: 700px;
+    height: 400px;
+    padding: 10px;
+    border: 1px solid white;
+} 
+
+footer {
+    background-color: blue;
+    width: 1000px;
+    height: 100px;
+    padding: 10px;
+    border: 1px soild white;
+}
+
+<body>
+<div class="container">
+<header>Header</header>
+<div class="clearfix">
