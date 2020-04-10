@@ -1,61 +1,46 @@
-*
-
-header
-{
-    background-image: url(europe.jpg);
-    height: 60vh;
-    background-size: cover;
-    background-position: center;
-
+*{
+    background-color:
 }
 
+head{
+    background-color: white;
+    display: inline-block;
+}
+
+h1{
+    background-color: #4aaaa5;
+    color: white;
+    padding: 20px;
+    float: left;
+    clear: both;
+}
+
+#portContact {
+    color: #4aaaa5;
+    padding-bottom: 20px;
+    border-bottom-style: solid;
+    border-width: medium;
+    border-color: #cccccc;
+}
 .nav
 {
-    float: center;
+    float: right;
     list-style: none;
-    
+    padding: 20px;
+    color: #666666;
 }
 
 .nav li
 {
     display: inline-block;
+    right: 0;
 }
 
-.nav li.active a
-{
-    border: 3px solid red;
-
-}
-
-.first-column
-{
-    float: left;
-    width: 66%;
-
-}
-
-.second-column
-{
-    float: right;
-    width: 33%;
-
-}
-
-.aside::after
-{
-    content:"";
-    display: table;
-    clear: both;
-}
-
-.body
-{
+body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777;
-    background: #777;
-    width: 960px;
-    font-size: 18px;
-
+    margin: auto;
+    background-image: src="assets/oriental-tiles/oriental-tiles.png" alt="";
 }
 
 main {
@@ -67,14 +52,64 @@ main {
 } 
 
 footer {
-    background-color: blue;
-    width: 1000px;
-    height: 100px;
-    padding: 10px;
+    background-color: #666666;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    width: 100%;
+    outline-style: solid;
+    outline-color: #4aaaa5;
+    outline-width: 10px;
+    padding: 60px 0 0 0;
     border: 1px soild white;
+    margin-top: 20px
 }
 
-<body>
-<div class="container">
-<header>Header</header>
-<div class="clearfix">
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+
+input[type=longText], select {
+    width: 100%;
+    padding: 150px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    align-items: top;
+    box-sizing: border-box;
+}
+
+input[type=submit] {
+    width: 100px;
+    background-color: #4aaaa5;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+}  
+
+input[type=submit]:hover {
+    background-color: #45a049;
+}
+
+#userInput {
+    clear: both;
+    position: relative;
+    top: 0;
+    background-color: #f2f2f2;
+    padding: 20px;
+    display: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    width: 960px;
+    font-size: 18px;
+    margin: auto;
+}
+
+
