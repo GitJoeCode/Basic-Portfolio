@@ -1,10 +1,19 @@
 *{
-    background-color:
+    box-sizing: border-box;
 }
 
-head{
-    background-color: white;
+#head{
     display: inline-block;
+    width: 100%;
+    border-bottom-style: solid;
+    border-width: large;
+    border-color: #cccccc;
+}
+
+header{
+    width: 960px;
+    margin: auto;
+    background: white;
 }
 
 h1{
@@ -13,6 +22,10 @@ h1{
     padding: 20px;
     float: left;
     clear: both;
+}
+
+#photo {
+    float: left;
 }
 
 #portContact {
@@ -26,7 +39,7 @@ h1{
 {
     float: right;
     list-style: none;
-    padding: 20px;
+    padding: 30px 0 30px 0;
     color: #666666;
 }
 
@@ -34,14 +47,21 @@ h1{
 {
     display: inline-block;
     right: 0;
+    margin-left: 40px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     color: #777;
     margin: auto;
-    background-image: src="assets/oriental-tiles/oriental-tiles.png" alt="";
+    background-image: url(oriental-tiles/oriental-tiles.png);
 }
+
+clearfix::after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
 
 main {
     background-color: blue;
@@ -63,6 +83,12 @@ footer {
     padding: 60px 0 0 0;
     border: 1px soild white;
     margin-top: 20px
+}
+
+#foot {
+    position: relative;
+    top: 300px;
+    width: 100%;
 }
 
 input[type=text], select {
@@ -112,4 +138,33 @@ input[type=submit]:hover {
     margin: auto;
 }
 
+#myInput {
+    clear: both;
+    position: relative;
+    top: 0;
+    background-color: #f2f2f2;
+    length: 400px;
+    padding: 20px;
+    display: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+    color: #777;
+    width: 960px;
+    font-size: 18px;
+    margin: auto;
+}
 
+.box{
+    position: relative;
+    display: inline-block; 
+    margin: 30px 30px 30px 0;
+}
+.box .label{
+    position: absolute;
+    z-index: 1;
+    margin: 0 auto;
+    top: 70%; 
+    text-align: center;
+    width: 300px; 
+    background-color: #4aaaa5;
+    color: white;
+}
